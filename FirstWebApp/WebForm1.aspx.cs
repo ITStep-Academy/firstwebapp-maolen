@@ -13,10 +13,11 @@ namespace FirstWebApp
         {
 
         }
-        protected void NameSubmitOnClick(object sender, EventArgs e)
+
+        protected void copyTextBtn_Click(object sender, EventArgs e)
         {
-            message.Text = $"Здравствуйте, {name.Text}";
-            message.Visible = true;
+            destinationTB.Text = sourceTB.Text;
+            sourceTB.Text = string.Empty;
         }
     }
 }

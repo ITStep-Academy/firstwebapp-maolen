@@ -9,12 +9,13 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            Введите имя: 
-            <asp:TextBox ID="name" runat="server"></asp:TextBox>
-            <br />
-        <asp:Button ID="btn" runat="server" OnClick="NameSubmitOnClick" Text="Отправить" />
-            <asp:Label ID="message" runat="server" Text="Label" Visible="False"></asp:Label>
+        <div> 
+            <asp:TextBox ID="sourceTB" runat="server" placeholder="Введите текст"></asp:TextBox>
+        <asp:Button ID="copyTextBtn" runat="server" Text="Копировать" OnClick="copyTextBtn_Click"/>
+           <p>  
+               <asp:TextBox ID="destinationTB" runat="server"></asp:TextBox>
+            </p>
+            
         </div>
     </form>
 </body>
